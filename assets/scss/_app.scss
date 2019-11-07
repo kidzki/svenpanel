@@ -1,0 +1,27 @@
+body {
+    @font-face {
+        font-family: 'VT323';
+        src: url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+    }
+    font-family: 'VT323', Arial;
+    text-align: center;
+    background: url('~static/img/chrome-bg.webp') no-repeat, url('~static/img/chrome-bg.jpg') no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h1 {
+    color: $color-red;
+    font-size: 5em;
+}
+.made {
+    padding-top: 10px;
+    color: grey;
+
+    a {
+        color: lightcoral;
+    }
+}

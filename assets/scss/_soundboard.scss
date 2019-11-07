@@ -1,0 +1,73 @@
+.soundboard {
+    padding: 40px;
+    width: 95vw;
+    height: 100%;
+    box-shadow: 0 0 1rem 0 rgba($color-black, .2);   
+    border-radius: 5px;
+    background-color: rgba($color-white, .15);
+    backdrop-filter: blur(10px);
+    overflow: auto;
+
+    h1 {
+        border-radius: 3px;
+        border: 0.4rem outset rgba($color-shadow, 0.25);
+        background-color: $color-black;
+        
+        @include xs() {
+            font-size: 3.5rem;
+        }
+    }
+
+    &__item {
+        &:hover {
+            .soundboard__knob {
+                box-shadow: inset 0 0 5px $color-white,
+                    inset 2px 0 8px $color-red,
+                    inset -2px 0 8px $color-darkred,
+                    inset 2px 0 20px $color-red,
+                    inset -2px 0 20px $color-darkred,
+                    0 0 5px $color-white,
+                    -1px 0 8px $color-red,
+                    1px 0 8px $color-darkred;
+            }
+            // .soundboard__label {
+            //     border-style: inset;
+            //     border-color: rgba($color-grey,.75);
+            // }
+        }
+    }
+    &__knob {
+        margin: 0 auto 1rem;
+        background: linear-gradient(-5deg,rgba($color-shadow,.5), $color-grey);
+        box-shadow: inset 0 0 5px $color-white,
+                    inset 2px 0 8px $color-grey,
+                    inset -2px 0 8px $color-shadow,
+                    inset 2px 0 20px $color-grey,
+                    inset -2px 0 20px $color-shadow,
+                    0 0 5px $color-white,
+                    -1px 0 8px $color-grey,
+                    1px 0 8px $color-shadow;
+        border-radius: 50%;
+        display: block;
+        height: 2rem;
+        width: 2rem;
+        transition: box-shadow .3s ease-in;
+        font-size: 0;
+        cursor: pointer;
+    }
+    &__label {
+        text-shadow: 0 0 0.4rem rgba($color-red,.9);
+        color: $color-red;
+        border-radius: 3px;
+        border: .4rem outset rgba($color-shadow,.25);
+        background-color: $color-black;
+        font-style: italic;
+        padding: .5rem .15rem;
+        margin-bottom: .25rem;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        user-select: none;
+        // cursor: pointer;
+    }
+}
