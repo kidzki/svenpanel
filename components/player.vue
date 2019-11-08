@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import audioHandler from '~/mixins/audioHandler.mixin.vue';
+import audioHandler from '~/assets/mixins/audioHandler.mixin.vue';
 
 export default {
   name: 'playerComponent',
