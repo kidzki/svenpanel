@@ -14,5 +14,61 @@
     {
         "file": "62_supergeil.mp3",
         "name": "Supergeil"
+    },
+	{
+        "file": "63_kuckuck.mp3",
+        "name": "Kuckuck"
+    },
+	{
+        "file": "64_mitsven.mp3",
+        "name": "Mit Sven Väth"
+    },
+	{
+        "file": "65_mmmhhhhhhh.mp3",
+        "name": "mmmhhhhhhh"
+    },
+	{
+        "file": "66_mmmhhhhhhh_oohhhhhhh.mp3",
+        "name": "mmmhhhhhhh ohhhhhhhh"
+    },
+	{
+        "file": "67_geschwindigkeit.mp3",
+        "name": "Geschwindigkeit"
+    },
+	{
+        "file": "68_human_beings.mp3",
+        "name": "Wonderful Human Beings"
+    },
+	{
+        "file": "69_omen_oder.mp3",
+        "name": "Wir sehen uns im Omen oder?"
+    },
+	{
+        "file": "70_buschnight.mp3",
+        "name": "Buschnight"
+    },
+	{
+        "file": "71_undefined.mp3",
+        "name": "$!%$§!%%!/§$"
+    },
+	{
+        "file": "72_rave_on.mp3",
+        "name": "Rave on"
+    },
+	{
+        "file": "73_scratch.mp3",
+        "name": "Scratch"
+    },
+	{
+        "file": "74_tschüss.mp3",
+        "name": "Tschüss"
+    },
+	{
+        "file": "75_väti.mp3",
+        "name": "Väti"
+    },
+	{
+        "file": "76_wasnhierlos.mp3",
+        "name": "Wasn hier los?"
     }
 ]

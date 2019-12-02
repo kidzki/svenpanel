@@ -2,7 +2,10 @@
   <div class="fluid-container py-4">
     <div class="row">
       <div class="soundboard">
-        <h1 class="mb-4">SvenPanel 3.0</h1>
+          <div class="soundboard__header">
+            <h1 class="mb-4">SvenPanel 3.0</h1>
+            <nuxt-link to="/next-generation">Next-Generation</nuxt-link>
+          </div>
         <div class="row">
           <player
             v-for="(sound, index) in sounds"

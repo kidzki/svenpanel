@@ -8,14 +8,22 @@
     backdrop-filter: blur(10px);
     overflow: auto;
 
-    h1 {
+    &__header {
         border-radius: 3px;
         border: 0.4rem outset rgba($color-shadow, 0.25);
         background-color: $color-black;
+        margin-bottom: 35px;
         
-        @include xs() {
-            font-size: 3.5rem;
+        h1 {
+            @include xs() {
+                font-size: 3.5rem;
+            }
         }
+
+        a {
+            font-size: 1.5rem;
+        }
+        
     }
 
     &__item {

@@ -3,7 +3,10 @@
     <div class="row">
       <div class="col-12">
         <div class="soundboard">
-          <h1 class="mb-4">SvenPanel 3.0</h1>
+          <div class="soundboard__header">
+            <h1 class="mb-4">SvenPanel 3.0</h1>
+            <nuxt-link to="/">Classic</nuxt-link>
+          </div>
           <div class="row">
             <player v-for="(sound, index) in sounds"
             :key="index"
