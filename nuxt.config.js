@@ -5,11 +5,23 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    // title: process.env.npm_package_name || '',
+    title: 'svenpanel - theshrine',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { name: 'theme-color', content: '#949494' },
+      { property: 'og:title', name: 'og:title', content: `svenpanel - theshrine` },
+      { property: 'og:description', name: 'og:description', content: process.env.npm_package_description || '' },
+      { property: 'og:type', name: 'og:type', content: 'website' },
+      { property: 'og:url', name: 'og:url', content: `https://svenpanel.de` },
+      { property: 'og:image', name: 'og:image', content: '@/static/og_image.png'},
+      { property: 'twitter:card', name: 'twitter:card', content: `@kidzki` },
+      { property: 'twitter:site', name: 'twitter:site', content: process.env.npm_package_description || '' },
+      { property: 'twitter:title', name: 'twitter:title', content: `svenpanel - theshrine` },
+      { property: 'twitter:description', name: 'twitter:description', content: process.env.npm_package_description || '' },
+      { property: 'twitter:image', name: 'twitter:image', content: `https://github.com/kidzki/theshrine_v3/blob/master/src/assets/img/og_image.jpg?raw=true` },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon-32x32.png' },
@@ -43,6 +55,7 @@ module.exports = {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
+    '@nuxtjs/pwa',
   ],
   /*
   ** Build configuration
