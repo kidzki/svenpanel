@@ -13,10 +13,7 @@
         </div>
       </div>
     </div>
-    <p class="made">
-      This PWA is made with ❤ and hosted on
-      <a href="https://github.com/kidzki/svenpanel">Github</a>
-    </p>
+    <p class="made">This PWA is made with ❤ and hosted on <a href="https://github.com/kidzki/svenpanel">Github</a></p>
   </div>
 </template>
 
