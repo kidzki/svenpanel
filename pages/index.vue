@@ -1,15 +1,15 @@
 <template>
   <div class="fluid-container py-4">
     <div class="row">
-      <div class="col-12">
-        <div class="soundboard">
-          <h1 class="mb-4">SvenPanel 3.0</h1>
-          <div class="row">
-            <player v-for="(sound, index) in sounds"
+      <div class="soundboard">
+        <h1 class="mb-4">SvenPanel 3.0</h1>
+        <div class="row">
+          <player
+            v-for="(sound, index) in sounds"
             :key="index"
             :soundfile="sound.file"
-            :soundname="sound.name"/>
-          </div>
+            :soundname="sound.name"
+          />
         </div>
       </div>
     </div>
@@ -19,18 +19,18 @@
 
 <script>
 // @ is an alias to /src
-import Player from '~/components/player.vue';
-import soundmap from '~/static/json/sounds.json';
+import Player from "~/components/player.vue";
+import soundmap from "~/static/json/sounds.json";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
-    Player,
+    Player
   },
   computed: {
     sounds() {
       return soundmap.map(item => item);
-    },
-  },
+    }
+  }
 };
 </script>
