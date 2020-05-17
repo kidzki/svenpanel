@@ -11,7 +11,7 @@
     &__header {
         border-radius: 3px;
         border: 0.4rem outset rgba($color-shadow, 0.25);
-        background-color: $color-black;
+        background-color: rgba($color-black,0.9);
         margin-bottom: 35px;
         
         h1 {
@@ -38,10 +38,6 @@
                     -1px 0 8px $color-red,
                     1px 0 8px $color-darkred;
             }
-            // .soundboard__label {
-            //     border-style: inset;
-            //     border-color: rgba($color-grey,.75);
-            // }
         }
     }
     &__knob {
@@ -56,19 +52,20 @@
                     -1px 0 8px $color-grey,
                     1px 0 8px $color-shadow;
         border-radius: 50%;
-        display: block;
-        height: 3rem;
-        width: 3rem;
-        transition: box-shadow .3s ease-in;
-        font-size: 0;
         cursor: pointer;
+        display: block;
+        font-size: 0;
+        height: 3rem;        
+        transition: box-shadow .3s ease-in;
+        width: 3rem;
     }
+
     &__label {
         text-shadow: 0 0 0.4rem rgba($color-red,.9);
         color: $color-red;
         border-radius: 3px;
         border: .4rem outset rgba($color-shadow,.25);
-        background-color: $color-black;
+        background-color: rgba($color-black,.9);
         font-style: italic;
         padding: .5rem .15rem;
         margin-bottom: .25rem;

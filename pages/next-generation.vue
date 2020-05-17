@@ -14,24 +14,29 @@
         </div>
       </div>
     </div>
-    <p class="made">This PWA is made with ❤ and hosted on <a href="https://github.com/kidzki/theshrine_v3">Github</a></p>
+    <p class="made">
+      This PWA is made with ❤ and hosted on
+      <a href="https://github.com/kidzki/theshrine_v3">Github</a>
+    </p>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Player from '~/components/player.vue';
-import soundmap from '~/static/json/next-generation.json';
+import Burgermenu from "~/components/burgermenu.vue";
+import Player from "~/components/player.vue";
+import soundmap from "~/static/json/next-generation.json";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
-    Player,
+    Burgermenu,
+    Player
   },
   computed: {
     sounds() {
       return soundmap.map(item => item);
-    },
-  },
+    }
+  }
 };
 </script>
