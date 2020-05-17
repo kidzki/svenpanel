@@ -1,94 +1,113 @@
 .menu__switch {
     display: none;
-  }
-  
-  .menu {
+}
+
+.menu {
     position: fixed;
     top: 0;
     right: -300px;
     width: 300px;
+
+    @include xs {
+        width: 100%;
+        right: -105%;
+    }
+
     height: 100%;
     padding: 50px 30px;
     box-sizing: border-box;
     transition: all 0.3s ease-in;
     text-align: center;
     z-index: 5;
-    
+
     backdrop-filter: blur(10px);
-    background-color: rgba($color-white, .55);
+    background-color: rgba($color-black, .55);
     box-shadow: 0 0 1rem 0 rgba($color-black, 0.2);
-  
+
+    &__brand {
+        color: $color-red;
+        font-size: 1.6em;
+    }
+
     ul {
-      padding: 0;
-      margin-top: 60px;
-      list-style-type: none;
-  
-      li {
-        a {
-          display: block;
-          line-height: 50px;
-          text-decoration: none;
-          font-size: 1.3rem;
-          text-shadow: 0 0 0.4rem rgba($color-red,.9);
-          color: $color-red;
-          border-top: 1px solid $color-black;
+        padding: 0;
+        margin-top: 60px;
+        list-style-type: none;
+
+        li {
+            a {
+                display: block;
+                line-height: 50px;
+                text-decoration: none;
+                font-size: 1.5rem;
+                text-shadow: 0 0 0.4rem rgba($color-red, .9);
+                color: $color-red;
+                border-top: 1px solid $color-white;
+            }
+
+            &:last-child a {
+                border-bottom: 1px solid $color-white;
+            }
         }
-  
-        &:last-child a {
-          border-bottom: 1px solid $color-black;
-        }
-      }
     }
-  }
-  
-  #menu-switch:checked ~ .menu {
+}
+
+#menu-switch:checked~.menu {
     right: 0;
-  }
-  
-  /* MENU TOGGLE ICON */
-  
-  .menu__toggle {
+}
+
+/* MENU TOGGLE ICON */
+
+.menu__toggle {
     &:focus {
-      outline: none;
+        outline: none;
     }
-  
+
     z-index: 5;
     display: inline-block;
     position: fixed;
-    right: 3%;
-    top: 3%;
+    right: 20px;
+    top: 20px;
+
+    @include xs {
+        top: auto;
+        bottom: 20px;
+    }
+
     width: 51px;
     height: 51px;
     cursor: pointer;
     border: none;
     background-color: rgba($color-black, .8);
     border-radius: 50px;
-    
+    margin: 0;
+
     transition: all 0.5s ease;
-  
-    &:before, &:after {
-      position: absolute;
-      content: "";
-      background-color: $color-red;
-    }
-  
-    &:before {
-      top: 12px;
-      left: 25px;
-      width: 1px;
-      height: 27px;
-    }
-  
+
+    &:before,
     &:after {
-      top: 25px;
-      left: 12px;
-      width: 27px;
-      height: 1px;
+        position: absolute;
+        content: "";
+        background-color: $color-red;
     }
-  }
-  
-  #menu-switch:checked ~ .page__wrap .menu__toggle {
+
+    &:before {
+        top: 12px;
+        left: 25px;
+        width: 1px;
+        height: 27px;
+    }
+
+    &:after {
+        top: 25px;
+        left: 12px;
+        width: 27px;
+        height: 1px;
+    }
+}
+
+#menu-switch:checked~.page__wrap .menu__toggle {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
+}
