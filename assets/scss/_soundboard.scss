@@ -38,10 +38,6 @@
                     -1px 0 8px $color-red,
                     1px 0 8px $color-darkred;
             }
-            // .soundboard__label {
-            //     border-style: inset;
-            //     border-color: rgba($color-grey,.75);
-            // }
         }
     }
     &__knob {
@@ -57,8 +53,8 @@
                     1px 0 8px $color-shadow;
         border-radius: 50%;
         display: block;
-        height: 2rem;
-        width: 2rem;
+        height: 2.5rem;
+        width: 2.5rem;
         transition: box-shadow .3s ease-in;
         font-size: 0;
         cursor: pointer;
