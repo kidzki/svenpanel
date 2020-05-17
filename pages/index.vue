@@ -1,26 +1,30 @@
 <template>
   <div class="fluid-container py-4">
+    <input class="menu__switch" id="menu-switch" type="checkbox" />
     <burgermenu />
-    <div class="row">
-      <div class="soundboard">
-        <div class="soundboard__header">
-          <h1>SvenPanel 3.0</h1>
-          <h3>Classic</h3>
-        </div>
-        <div class="row">
-          <player
-            v-for="(sound, index) in sounds"
-            :key="index"
-            :soundfile="sound.file"
-            :soundname="sound.name"
-          />
+    <div class="page__wrap">  
+      <label for="menu-switch" id="menu-toggle" class="menu__toggle"></label>
+      <div class="row">
+        <div class="soundboard">
+          <div class="soundboard__header">
+            <h1>SvenPanel 3.0</h1>
+            <h3>Classic</h3>
+          </div>
+          <div class="row">
+            <player
+              v-for="(sound, index) in sounds"
+              :key="index"
+              :soundfile="sound.file"
+              :soundname="sound.name"
+            />
+          </div>
         </div>
       </div>
+      <p class="made">
+        This PWA is made with ❤ and hosted on
+        <a href="https://github.com/kidzki/svenpanel">Github</a>
+      </p>
     </div>
-    <p class="made">
-      This PWA is made with ❤ and hosted on
-      <a href="https://github.com/kidzki/svenpanel">Github</a>
-    </p>
   </div>
 </template>
 

@@ -1,26 +1,94 @@
-.navbar button,
-.navbar-nav a {
-  backdrop-filter: blur(10px);
-  background-color: rgba($color-white, .15);
-  box-shadow: 0 0 1rem 0 rgba($color-black, 0.2);
-  
-}
-
-.navbar {
-    .navbar-toggler {
-        border: 1px solid $color-black;
-    }
-} 
-    
-.navbar-nav {
-  margin-top: 5px;
-  a {
-    margin-bottom: 5px;
-    padding: 12px;
-    border-radius: 5px;
-    font-size: 1.3rem;
-    color: $color-red;
-    border: 1px solid $color-black;
-    text-shadow: 0 0 0.4rem rgba($color-red,.9);
+.menu__switch {
+    display: none;
   }
-}
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in;
+    text-align: center;
+    z-index: 5;
+    
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-white, .55);
+    box-shadow: 0 0 1rem 0 rgba($color-black, 0.2);
+  
+    ul {
+      padding: 0;
+      margin-top: 60px;
+      list-style-type: none;
+  
+      li {
+        a {
+          display: block;
+          line-height: 50px;
+          text-decoration: none;
+          font-size: 1.3rem;
+          text-shadow: 0 0 0.4rem rgba($color-red,.9);
+          color: $color-red;
+          border-top: 1px solid $color-black;
+        }
+  
+        &:last-child a {
+          border-bottom: 1px solid $color-black;
+        }
+      }
+    }
+  }
+  
+  #menu-switch:checked ~ .menu {
+    right: 0;
+  }
+  
+  /* MENU TOGGLE ICON */
+  
+  .menu__toggle {
+    &:focus {
+      outline: none;
+    }
+  
+    z-index: 5;
+    display: inline-block;
+    position: fixed;
+    right: 3%;
+    top: 3%;
+    width: 51px;
+    height: 51px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba($color-black, .8);
+    border-radius: 50px;
+    
+    transition: all 0.5s ease;
+  
+    &:before, &:after {
+      position: absolute;
+      content: "";
+      background-color: $color-red;
+    }
+  
+    &:before {
+      top: 12px;
+      left: 25px;
+      width: 1px;
+      height: 27px;
+    }
+  
+    &:after {
+      top: 25px;
+      left: 12px;
+      width: 27px;
+      height: 1px;
+    }
+  }
+  
+  #menu-switch:checked ~ .page__wrap .menu__toggle {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
