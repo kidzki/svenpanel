@@ -2,7 +2,7 @@
   <div class="fluid-container py-4">
     <input class="menu__switch" id="menu-switch" type="checkbox" />
     <burgermenu />
-    <div class="page__wrap">
+    <div class="page__wrap">  
       <label for="menu-switch" id="menu-toggle" class="menu__toggle">
         <span class="menu__toggle--icon"></span>
       </label>
@@ -13,12 +13,10 @@
             <h3>Next-Generation</h3>
           </div>
           <div class="row">
-            <player
-              v-for="(sound, index) in sounds"
-              :key="index"
-              :soundfile="sound.file"
-              :soundname="sound.name"
-            />
+            <player v-for="(sound, index) in sounds"
+            :key="index"
+            :soundfile="sound.file"
+            :soundname="sound.name"/>
           </div>
         </div>
       </div>

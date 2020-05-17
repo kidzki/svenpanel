@@ -52,13 +52,14 @@
                     -1px 0 8px $color-grey,
                     1px 0 8px $color-shadow;
         border-radius: 50%;
+        cursor: pointer;
         display: block;
+        font-size: 0;
         height: 2.5rem;
         width: 2.5rem;
         transition: box-shadow .3s ease-in;
-        font-size: 0;
-        cursor: pointer;
     }
+
     &__label {
         text-shadow: 0 0 0.4rem rgba($color-red,.9);
         color: $color-red;
