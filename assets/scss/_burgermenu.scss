@@ -16,7 +16,7 @@
     height: 100%;
     padding: 50px 30px;
     box-sizing: border-box;
-    transition: all 0.3s ease-in;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-align: center;
     z-index: 5;
 

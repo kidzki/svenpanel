@@ -3,7 +3,9 @@
     <input class="menu__switch" id="menu-switch" type="checkbox" />
     <burgermenu />
     <div class="page__wrap">
-      <label for="menu-switch" id="menu-toggle" class="menu__toggle"></label>
+      <label for="menu-switch" id="menu-toggle" class="menu__toggle">
+        <span class="menu__toggle--icon"></span>
+      </label>
       <div class="row">
         <div class="soundboard">
           <div class="soundboard__header">
