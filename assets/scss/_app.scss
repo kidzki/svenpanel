@@ -3,6 +3,7 @@ body {
     text-align: center;
     background: url('~static/img/chrome-bg.webp') no-repeat, url('~static/img/chrome-bg.jpg') no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     display: grid;
     align-items: center;
     justify-content: center;
