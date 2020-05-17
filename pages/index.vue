@@ -1,11 +1,12 @@
 <template>
   <div class="fluid-container py-4">
+    <burgermenu />
     <div class="row">
       <div class="soundboard">
-          <div class="soundboard__header">
-            <h1 class="mb-4">SvenPanel 3.0</h1>
-            <nuxt-link to="/next-generation">Next-Generation</nuxt-link>
-          </div>
+        <div class="soundboard__header">
+          <h1>SvenPanel 3.0</h1>
+          <h3>Classic</h3>
+        </div>
         <div class="row">
           <player
             v-for="(sound, index) in sounds"
@@ -16,18 +17,23 @@
         </div>
       </div>
     </div>
-    <p class="made">This PWA is made with ❤ and hosted on <a href="https://github.com/kidzki/svenpanel">Github</a></p>
+    <p class="made">
+      This PWA is made with ❤ and hosted on
+      <a href="https://github.com/kidzki/svenpanel">Github</a>
+    </p>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import Burgermenu from "~/components/burgermenu.vue";
 import Player from "~/components/player.vue";
 import soundmap from "~/static/json/sounds.json";
 
 export default {
   name: "home",
   components: {
+    Burgermenu,
     Player
   },
   computed: {

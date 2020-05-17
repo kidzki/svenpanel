@@ -1,0 +1,26 @@
+.navbar button,
+.navbar-nav a {
+  backdrop-filter: blur(10px);
+  background-color: rgba($color-white, .15);
+  box-shadow: 0 0 1rem 0 rgba($color-black, 0.2);
+  
+}
+
+.navbar {
+    .navbar-toggler {
+        border: 1px solid $color-black;
+    }
+} 
+    
+.navbar-nav {
+  margin-top: 5px;
+  a {
+    margin-bottom: 5px;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    color: $color-red;
+    border: 1px solid $color-black;
+    text-shadow: 0 0 0.4rem rgba($color-red,.9);
+  }
+}

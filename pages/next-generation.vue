@@ -1,11 +1,12 @@
 <template>
   <div class="fluid-container py-4">
+    <burgermenu />
     <div class="row">
       <div class="col-12">
         <div class="soundboard">
           <div class="soundboard__header">
-            <h1 class="mb-4">SvenPanel 3.0</h1>
-            <nuxt-link to="/">Classic</nuxt-link>
+            <h1>SvenPanel 3.0</h1>
+            <h3>Next-Generation</h3>
           </div>
           <div class="row">
             <player v-for="(sound, index) in sounds"
@@ -22,13 +23,15 @@
 
 <script>
 // @ is an alias to /src
+import Burgermenu from "~/components/burgermenu.vue";
 import Player from '~/components/player.vue';
 import soundmap from '~/static/json/next-generation.json';
 
 export default {
   name: 'home',
   components: {
-    Player,
+    Burgermenu,
+    Player
   },
   computed: {
     sounds() {
