@@ -23,9 +23,11 @@ jobs:
         yarn generate
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.4
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BASE_BRANCH: master # The branch the action should deploy from.
-        BRANCH: gh-pages # The branch the action should deploy to.
-        FOLDER: dist # The folder the action should deploy.
-        CNAME: svenpanel.de 
+      with: 
+        token: ${{ secrets.ACCESS_TOKEN }}
+        branch: gh-pages
+        folder: dist
+        clean: true
+        clean-exclude: |
+          CNAME
+          .nojekyll
