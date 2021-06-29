@@ -17,6 +17,7 @@ module.exports = {
       { property: 'og:type', name: 'og:type', content: 'website' },
       { property: 'og:url', name: 'og:url', content: `https://svenpanel.de` },
       { property: 'og:image', name: 'og:image', content: `/og_image.jpg`},
+      { property: 'og:audio', name: 'og:audio', content: `/sounds/30_laune1.mp3`},
       { property: 'og:site_name', name: 'og:site_name', content: `Svenpanel - TheShrine v3` },
       { property: 'twitter:card', name: 'twitter:card', content: `@kidzki` },
       { property: 'twitter:site', name: 'twitter:site', content: process.env.npm_package_description || '' },
