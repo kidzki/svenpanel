@@ -1,6 +1,7 @@
 
 module.exports = {
   mode: 'spa',
+  target: 'static',
   /*
   ** Headers of the page
   */
@@ -60,6 +61,13 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap'
   ],
+  /*
+  ** Sitemap configuration
+  */
+  sitemap: {
+    hostname: 'https://svenpanel.de/',
+    gzip: true
+  },
   /*
   ** Build configuration
   */
