@@ -28,7 +28,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon-32x32.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=VT323&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=VT323&display=swap', media:'all' }
     ]
   },
   /*
