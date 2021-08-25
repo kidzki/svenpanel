@@ -58,6 +58,7 @@ module.exports = {
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap'
   ],
   /*
   ** Build configuration

@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-beta.19",
+    "@nuxtjs/sitemap": "^2.4.0",
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.14.0",
     "cross-env": "^5.2.0",
