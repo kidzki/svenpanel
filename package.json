@@ -19,7 +19,7 @@
     "cross-env": "^7.0.3",
     "express": "^4.17.3",
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.15.8"
+    "nuxt": "^3.4.3"
   },
   "devDependencies": {
     "@vue/test-utils": "^2.0.0-rc.19",
